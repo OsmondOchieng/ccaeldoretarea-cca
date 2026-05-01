@@ -1,0 +1,823 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CHURCH OF CHRIST IN AFRICA-ELDORET AREA</title>
+  <meta name="description" content="CCA Church Eldoret Area — Faith |
+Family | Purpose. Worship times, ministries, sermons, events, giving
+and contact." />
+  <meta name="theme-color" content="#FFB6C1">
+
+  <!-- Google Font (Inter) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+rel="stylesheet">
+
+  <!-- Your stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+  <!-- Welcome Popup Modal -->
+  <div id="welcomeModal" class="modal" style="display:none;">
+    <div class="modal-content">
+      <span class="close" onclick="closeWelcomeModal()">&times;</span>
+      <div class="welcome-message">
+        <h2 id="welcomeGreeting">Good Morning!</h2>
+        <p><strong>Welcome to CCA Church Eldoret Area</strong></p>
+        <p><em>"Faith | Family | Purpose"</em></p>
+        <p style="font-size: 0.95em; margin-top: 15px;">A message from <strong>Rev. Prof. Peter Odera Ajuoga</strong>, Area In-Charge:</p>
+        <p style="font-style: italic; color: #0000FF;">
+          "We are so glad you found us! CCA Church is a Christ-centered community that exists to love God, love people, and make disciples. Whether you are exploring faith, returning after time away, or looking for a spiritual family – you are welcome here. Come as you are, and experience God's grace with us."
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header>
+    <div class="header-branding">
+      <img src="images/LOGO.png" alt="CCA Church Eldoret logo" class="site-logo" onerror="this.onerror=null;this.style.display='none';">
+      <div>
+        <h1 id="top">CHURCH OF CHRIST IN AFRICA-ELDORET AREA</h1>
+        <p><em>Faith | Family | Purpose</em></p>
+      </div>
+    </div>
+
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li class="nav-item-has-submenu">
+          <a href="#about" onclick="toggleNavDropdown(event)">About Us ▾</a>
+          <ul class="submenu">
+            <li><a href="#story" onclick="showTopic('about-item','story','aboutDropdown')">Our Story</a></li>
+            <li><a href="#mission" onclick="showTopic('about-item','mission','aboutDropdown')">Mission</a></li>
+            <li><a href="#vision" onclick="showTopic('about-item','vision','aboutDropdown')">Vision</a></li>
+            <li><a href="#values" onclick="showTopic('about-item','values','aboutDropdown')">Core Values</a></li>
+            <li><a href="#location" onclick="showTopic('about-item','location','aboutDropdown')">Locations</a></li>
+          </ul>
+        </li>
+        <li class="nav-item-has-submenu">
+          <a href="#leadership" onclick="toggleNavDropdown(event)">Leadership ▾</a>
+          <ul class="submenu">
+            <li><a href="#leadership">Church Leadership</a></li>
+          </ul>
+        </li>
+        <li class="nav-item-has-submenu">
+          <a href="#ministries" onclick="toggleNavDropdown(event)">Ministries ▾</a>
+          <ul class="submenu">
+            <li><a href="#children" onclick="showTopic('ministry-item','children','ministryDropdown')">Children's</a></li>
+            <li><a href="#youth" onclick="showTopic('ministry-item','youth','ministryDropdown')">Youth</a></li>
+            <li><a href="#women" onclick="showTopic('ministry-item','women','ministryDropdown')">Women's</a></li>
+            <li><a href="#men" onclick="showTopic('ministry-item','men','ministryDropdown')">Men's</a></li>
+            <li><a href="#worship" onclick="showTopic('ministry-item','worship','ministryDropdown')">Worship & Choir</a></li>
+            <li><a href="#outreach" onclick="showTopic('ministry-item','outreach','ministryDropdown')">Outreach</a></li>
+            <li><a href="#media" onclick="showTopic('ministry-item','media','ministryDropdown')">Media & Tech</a></li>
+          </ul>
+        </li>
+        <li class="nav-item-has-submenu">
+          <a href="#sermons" onclick="toggleNavDropdown(event)">Media ▾</a>
+          <ul class="submenu">
+            <li><a href="#sermons-featured" onclick="showTopic('sermons-item','sermons-featured','sermonsDropdown')">Featured Sermon</a></li>
+            <li><a href="#sermons-recent" onclick="showTopic('sermons-item','sermons-recent','sermonsDropdown')">Recent Sermons</a></li>
+            <li><a href="#sermons-podcasts" onclick="showTopic('sermons-item','sermons-podcasts','sermonsDropdown')">Podcasts</a></li>
+            <li><a href="#sermons-notes" onclick="showTopic('sermons-item','sermons-notes','sermonsDropdown')">Notes</a></li>
+            <li><a href="#sermons-testimonies" onclick="showTopic('sermons-item','sermons-testimonies','sermonsDropdown')">Testimonies</a></li>
+          </ul>
+        </li>
+        <li class="nav-item-has-submenu">
+          <a href="#events" onclick="toggleNavDropdown(event)">Events ▾</a>
+          <ul class="submenu">
+            <li><a href="#events-featured" onclick="showTopic('events-item','events-featured','eventsDropdown')">Featured Event</a></li>
+            <li><a href="#events-upcoming" onclick="showTopic('events-item','events-upcoming','eventsDropdown')">Upcoming Events</a></li>
+            <li><a href="#events-calendar" onclick="showTopic('events-item','events-calendar','eventsDropdown')">Calendar</a></li>
+            <li><a href="#events-gallery" onclick="showTopic('events-item','events-gallery','eventsDropdown')">Gallery</a></li>
+          </ul>
+        </li>
+        <li><a href="#giving">Give</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+
+    <p><a href="#plan-visit">Plan Your Visit</a> | <a
+href="#giving">Give Now</a></p>
+    <hr />
+  </header>
+
+  <!-- HOME -->
+  <main>
+    <section id="home" aria-labelledby="home-heading">
+      <div class="hero">
+        <img src="images/Background.png" alt="Welcome to CCA Church" class="hero-image">
+      </div>
+      <h2 id="home-heading">Welcome to CCA Church Eldoret Area</h2>
+      <p><strong>A place where faith grows, families are strengthened,
+and lives are transformed through the love of Jesus
+Christ.</strong></p>
+
+      <p>
+        <a href="#plan-visit">Plan Your Visit</a> |
+        <a href="#sermons">Watch Live / Sermons</a>
+      </p>
+
+      <!-- Quick Info -->
+      <h3>Quick Info</h3>
+      <ul>
+        <li><strong>Location:</strong> Kipkaren Church</li>
+        <li><strong>Location:</strong> Mwangaza Church</li>
+        <li><strong>Location:</strong> Majengo Church</li>
+        <li><strong>Location:</strong> King'ong'o Church</li>
+        <li><strong>Location:</strong> Turbo Church</li>
+        <li><strong>Service Times:</strong> Sundays 9:00 AM &amp;
+11:00 AM — Midweek Fellowship Wednesdays 6:00 PM</li>
+        <li><strong>Watch Online:</strong> <a href="https://www.youtube.com/channel/UCM-I-BnJ7eQJApYgM914VKA" target="_blank" rel="noopener">YouTube</a> / Facebook Live (link placeholder)</li>
+        <li><strong>Prayer Requests:</strong> See Contact &amp; Prayer
+Request form below</li>
+      </ul>
+
+      <!-- Welcome Message -->
+      <h3>Welcome from the Area in-charge</h3>
+      <p>
+        We are so glad you found us! CCA Church is a Christ-centered
+community that exists to love God, love people,
+        and make disciples. Whether you are exploring faith, returning
+after time away, or looking for a spiritual family — you are welcome
+here.
+        Come as you are, and experience God's grace with us.
+      </p>
+      <p><a href="#about">Learn More About Us</a></p>
+    </section>
+
+    <hr />
+
+    <!-- ABOUT -->
+        <section id="about" aria-labelledby="about-heading">
+      <h2 id="about-heading">About CCA Church Eldoret Area</h2>
+
+      <div class="dropdown">
+        <button class="dropdown-btn" onclick="toggleAboutDropdown()">Select About Topic ▼</button>
+        <div id="aboutDropdown" class="dropdown-content">
+          <a href="#about-story" onclick="showTopic('about-item','story','aboutDropdown')">Our Story</a>
+          <a href="#about-mission" onclick="showTopic('about-item','mission','aboutDropdown')">Mission</a>
+          <a href="#about-vision" onclick="showTopic('about-item','vision','aboutDropdown')">Vision</a>
+          <a href="#about-values" onclick="showTopic('about-item','values','aboutDropdown')">Core Values</a>
+          <a href="#about-location" onclick="showTopic('about-item','location','aboutDropdown')">Locations</a>
+        </div>
+      </div>
+
+      <div id="about-content" style="margin-top: 20px;">
+        <div id="story" class="about-item" style="display:none;">
+          <h3>Our Story</h3>
+          <p>
+            CCA Church Eldoret Area was founded in **** with a small group of believers led by Archbishop Dr. Mathews Abednego Ajuoga with one vision  to create a Christ-centered community that welcomes all. Over the years, God has grown us into a vibrant church family of worshippers, servant leaders, and missionaries reaching beyond the walls of our sanctuary.
+          </p>
+        </div>
+
+        <div id="mission" class="about-item" style="display:none;">
+          <h3>Mission</h3>
+          <p><em>To lead people into a growing relationship with Jesus Christ by teaching God's Word, worshipping together, and serving our community.</em></p>
+        </div>
+
+        <div id="vision" class="about-item" style="display:none;">
+          <h3>Vision</h3>
+          <p><em>To be a church that transforms lives, strengthens families, and impacts the world with the love of Christ.</em></p>
+        </div>
+
+        <div id="values" class="about-item" style="display:none;">
+          <h3>Core Values</h3>
+          <ul>
+            <li>Faith  God's Word is our foundation.</li>
+            <li>Love  Compassion for people.</li>
+            <li>Family  Nurturing relationships and community.</li>
+            <li>Service  Reaching out to meet real needs.</li>
+            <li>Mission  Sharing the gospel locally and globally.</li>
+          </ul>
+        </div>
+
+        <div id="location" class="about-item" style="display:none;">
+          <h3>Our Locations</h3>
+          <p>CCA Church Eldoret Area consists of the following branch churches:</p>
+          <ul>
+            <li>Kipkaren Church</li>
+            <li>Mwangaza Church</li>
+            <li>Majengo Church</li>
+            <li>King'ong'o Church</li>
+            <li>Turbo Church</li>
+          </ul>
+        </div>
+
+</div>
+
+      <p style="margin-top: 20px;"><a href="#ministries">Explore Our Ministries</a></p>
+    </section>
+
+    <hr />
+
+    <!-- CHURCH LEADERSHIP CARDS -->
+    <section id="leadership" aria-labelledby="leadership-heading">
+      <h2 id="leadership-heading">Church Leadership</h2>
+
+      <div class="leadership-cards">
+        <div class="card card-xl">
+          <img src="images/Founding Father.png" alt="Archbishop Dr. Mathews Abednego Ajuoga" class="circular-image" onerror="this.onerror=null;this.src='images/placeholder.svg';">
+          <h4>Founding Father  Archbishop. Dr. Mathews Abednego Ajuoga</h4>
+          <p>Archbishop Dr. Mathews Abednego Ajuoga is the founding father of CCA-hera.</p>
+        </div>
+        <div class="card card-lg">
+          <img src="images/archbishop.jpg" alt="Archbishop" class="circular-image" onerror="this.onerror=null;this.src='images/placeholder.svg';">
+          <h4>Archbishop</h4>
+          <p>Add description for Archbishop.</p>
+        </div>
+        <div class="card card-lg">
+          <img src="images/Area_in-charge-removebg-preview.png" alt="Rev. Prof. Peter Odera Ajuoga" class="circular-image" onerror="this.onerror=null;this.src='images/placeholder.svg';">
+          <h4>Area In-Charge  Rev. Prof. Peter Odera Ajuoga</h4>
+          <p>Provides spiritual oversight and leadership across the Eldoret Area.</p>
+        </div>
+        <div class="card">
+          <img src="images/ICT Chairman.jpg" alt="Assistant Area In-Charge  Kipkaren Pastorate" class="circular-image" onerror="this.onerror=null;this.src='images/placeholder.svg';">
+          <h4>Assistant Area In-Charge  Kipkaren Pastorate</h4>
+          <p>Oversees pastoral work and ministry coordination at Kipkaren.</p>
+        </div>
+        <div class="card">
+          <img src="images/placeholder.svg" alt="Assistant Area In-Charge  King'ong'o Pastorate" class="circular-image" onerror="this.onerror=null;this.src='images/placeholder.svg';">
+          <h4>Assistant Area In-Charge  King'ong'o Pastorate</h4>
+          <p>Supports ministry growth and discipleship in King'ong'o.</p>
+        </div>
+        <div class="card">
+          <img src="images/area-secretary.png" alt="Secretary of the Area" class="circular-image secretary-image" onerror="this.onerror=null;this.src='images/placeholder.svg';">
+          <h4>Secretary of the Area</h4>
+          <p>Add description for Secretary of the Area.</p>
+        </div>
+        <div class="card">
+          <img src="images/treasurer.jpg" alt="Treasurer" class="circular-image" onerror="this.onerror=null;this.src='images/placeholder.svg';">
+          <h4>Treasurer</h4>
+          <p>Add description for Treasurer.</p>
+        </div>
+        <div class="card">
+          <img src="images/women_chairlady.jpg" alt="Women Chairlady" class="circular-image" onerror="this.onerror=null;this.src='images/placeholder.svg';">
+          <h4>Women Chairlady</h4>
+          <p>Add description for Women Chairlady.</p>
+        </div>
+        <div class="card">
+          <img src="images/sunday_school_teacher.jpg" alt="Sunday School Teacher" class="circular-image" onerror="this.onerror=null;this.src='images/placeholder.svg';">
+          <h4>Sunday School Teacher</h4>
+          <p>Add description for Sunday School Teacher.</p>
+        </div>
+        <div class="card">
+          <img src="images/youth_chairman.jpg" alt="Youth Chairman" class="circular-image" onerror="this.onerror=null;this.src='images/placeholder.svg';">
+          <h4>Youth Chairman</h4>
+          <p>Add description for Youth Chairman.</p>
+        </div>
+        <div class="card">
+          <img src="images/youth_chairlady.jpg" alt="Youth Chairlady" class="circular-image" onerror="this.onerror=null;this.src='images/placeholder.svg';">
+          <h4>Youth Chairlady</h4>
+          <p>Add description for Youth Chairlady.</p>
+        </div>
+        <div class="card">
+          <img src="images/MINJI.png" alt="Min Ji" class="circular-image minji-image" onerror="this.onerror=null;this.src='images/placeholder.svg';">
+          <h4>Min Ji</h4>
+          <p>Add description for Min Ji.</p>
+        </div>
+      </div>
+    </section>
+
+    <hr />
+
+    <!-- MINISTRIES -->
+    <section id="ministries" aria-labelledby="ministries-heading">
+      <h2 id="ministries-heading">Our Ministries</h2>
+
+      <p>At CCA Church, every believer has a place to belong and a role to play. Our ministries help people grow spiritually, build relationships, and serve our community.</p>
+
+      <div class="dropdown">
+        <button class="dropdown-btn" onclick="toggleDropdown()">Select a Ministry ▼</button>
+        <div id="ministryDropdown" class="dropdown-content">
+        <a href="#ministry-children" onclick="showTopic('ministry-item','children','ministryDropdown')">Children's Ministry</a>
+        <a href="#ministry-youth" onclick="showTopic('ministry-item','youth','ministryDropdown')">Youth Ministry</a>
+        <a href="#ministry-women" onclick="showTopic('ministry-item','women','ministryDropdown')">Women's Ministry</a>
+        <a href="#ministry-men" onclick="showTopic('ministry-item','men','ministryDropdown')">Men's Ministry</a>
+        <a href="#ministry-worship" onclick="showTopic('ministry-item','worship','ministryDropdown')">Worship & Choir</a>
+        <a href="#ministry-outreach" onclick="showTopic('ministry-item','outreach','ministryDropdown')">Community Outreach & Missions</a>
+        <a href="#ministry-media" onclick="showTopic('ministry-item','media','ministryDropdown')">Media & Tech</a>
+        </div>
+      </div>
+
+      <div id="ministry-content" style="margin-top: 20px;">
+        <div id="children" class="ministry-item" style="display:none;">
+          <h3>Children's Ministry</h3>
+          <p>Safe, fun, and Christ-centered environment. Age-based classes, songs, and Bible memory programs.</p>
+          <p><a href="#contact">Learn More / Volunteer</a></p>
+        </div>
+        <div id="youth" class="ministry-item" style="display:none;">
+          <h3>Youth Ministry</h3>
+          <p>Teen and young adult fellowship, Bible studies, mentorship, leadership training, youth camps and conferences.</p>
+          <p><a href="#events">Join Youth Events</a></p>
+        </div>
+        <div id="women" class="ministry-item" style="display:none;">
+          <h3>Women's Ministry</h3>
+          <p>Bible studies, prayer fellowships, support groups for mothers, workshops and retreats.</p>
+          <p><a href="#contact">Learn More / Volunteer</a></p>
+        </div>
+        <div id="men" class="ministry-item" style="display:none;">
+          <h3>Men's Ministry</h3>
+          <p>Discipleship, leadership development, prayer breakfasts and community mentorship programs.</p>
+          <p><a href="#contact">Learn More / Volunteer</a></p>
+        </div>
+        <div id="worship" class="ministry-item" style="display:none;">
+          <h3>Worship & Choir</h3>
+          <p>Choir, band, praise team; training for singers and instrumentalists; worship nights & concerts.</p>
+          <p><a href="#contact">Learn More / Volunteer</a></p>
+        </div>
+        <div id="outreach" class="ministry-item" style="display:none;">
+          <h3>Community Outreach & Missions</h3>
+          <p>Food drives, medical camps, school support, evangelism, and partnerships with NGOs.</p>
+          <p><a href="#contact">Get Involved</a></p>
+        </div>
+        <div id="media" class="ministry-item" style="display:none;">
+          <h3>Media & Tech</h3>
+          <p>Live streaming, video production, sound & lighting, website, photography and social media.</p>
+          <p><a href="#contact">Get Involved</a></p>
+        </div>
+      </div>
+
+      <p style="margin-top: 20px;"><a href="#contact">Get Involved</a></p>
+    </section>
+
+    <hr />
+
+    <!-- SERMONS & MEDIA -->
+        <section id="sermons" aria-labelledby="sermons-heading">
+      <h2 id="sermons-heading">Sermons & Media</h2>
+
+      <p>We believe God's Word transforms lives. Access recent messages, podcasts, and study notes here.</p>
+
+      <div class="dropdown">
+        <button class="dropdown-btn" onclick="toggleDropdown('sermonsDropdown')">Select Sermons Topic ▼</button>
+        <div id="sermonsDropdown" class="dropdown-content">
+          <a href="#sermons-featured" onclick="showTopic('sermons-item','sermons-featured','sermonsDropdown')">Featured Sermon</a>
+          <a href="#sermons-recent" onclick="showTopic('sermons-item','sermons-recent','sermonsDropdown')">Recent Sermons</a>
+          <a href="#sermons-podcasts" onclick="showTopic('sermons-item','sermons-podcasts','sermonsDropdown')">Podcasts / Audio</a>
+          <a href="#sermons-notes" onclick="showTopic('sermons-item','sermons-notes','sermonsDropdown')">Sermon Notes & Resources</a>
+          <a href="#sermons-testimonies" onclick="showTopic('sermons-item','sermons-testimonies','sermonsDropdown')">Testimonies</a>
+        </div>
+      </div>
+
+      <div id="sermons-content" style="margin-top: 20px;">
+        <div id="sermons-featured" class="sermons-item" style="display:none;">
+          <a id="sermon-archive"></a>
+          <h3>Featured Sermon</h3>
+          <article>
+            <h4>Faith That Moves Mountains  Pastor ... (Sept 2026)</h4>
+            <p><em>In this message, Pastor ... encourages us to walk boldly in faith, trusting God's promises during hard seasons.</em></p>
+            <p>Video: (embed link placeholder)</p>
+            <p><a href="#sermon-archive">Watch Now</a></p>
+          </article>
+        </div>
+
+        <div id="sermons-recent" class="sermons-item" style="display:none;">
+          <h3>Recent Sermons</h3>
+          <ul>
+            <li><strong>Walking by Faith</strong>  Sept 10, 2026  [Watch Video] [Listen Audio] [Download Notes]</li>
+            <li><strong>Hope in Difficult Times</strong>  Aug 30, 2026  [Watch Video] [Listen Audio]</li>
+            <li><strong>The Power of Prayer</strong>  Aug 15, 2026  [Watch Video] [Download Notes]</li>
+            <li><strong>Living with Purpose</strong>  July 28, 2026  [Watch Video]</li>
+          </ul>
+        </div>
+
+        <div id="sermons-podcasts" class="sermons-item" style="display:none;">
+          <h3>Podcasts / Audio</h3>
+          <p>Subscribe on Spotify / Apple Podcasts (links placeholder). Example episode: "Overcoming Fear with Faith"  Episode 15.</p>
+        </div>
+
+        <div id="sermons-notes" class="sermons-item" style="display:none;">
+          <h3>Sermon Notes & Resources</h3>
+          <p>Downloadable PDF outlines and small group study guides (links placeholder).</p>
+        </div>
+
+        <div id="sermons-testimonies" class="sermons-item" style="display:none;">
+          <h3>Testimonies</h3>
+          <p>"After listening to the series on prayer, I saw breakthroughs in my family life."  Jane W.</p>
+          <p><a href="#contact">Share a testimony or request prayer</a></p>
+        </div>
+      </div>
+    </section>
+
+    <hr />
+
+    <!-- EVENTS -->
+        <section id="events" aria-labelledby="events-heading">
+      <h2 id="events-heading">Events</h2>
+      <p>Life at CCA is vibrant. Join worship, prayer nights, camps, outreach, and more.</p>
+
+      <div class="dropdown">
+        <button class="dropdown-btn" onclick="toggleDropdown('eventsDropdown')">Select Events Topic ▼</button>
+        <div id="eventsDropdown" class="dropdown-content">
+          <a href="#events-featured" onclick="showTopic('events-item','events-featured','eventsDropdown')">Featured Events - Youth Camp 2026</a>
+          <a href="#events-upcoming" onclick="showTopic('events-item','events-upcoming','eventsDropdown')">Upcoming Events</a>
+          <a href="#events-calendar" onclick="showTopic('events-item','events-calendar','eventsDropdown')">Events Calendar (Monthly)</a>
+          <a href="#events-gallery" onclick="showTopic('events-item','events-gallery','eventsDropdown')">Past Events Gallery</a>
+        </div>
+      </div>
+
+      <div id="events-content" style="margin-top: 20px;">
+        <div id="events-featured" class="events-item" style="display:none;">
+          <h3>Featured Event  Youth Camp 2026</h3>
+          <p><strong>Youth Camp  "Ignite Your Faith"</strong><br/>
+             Dates: September 2527, 2026<br/>
+             Venue: Lakeview Retreat Center, Naivasha<br/>
+             Join us for 3 days of worship, workshops, and fellowship.</p>
+          <p><a href="#contact">Register Now (link placeholder)</a></p>
+        </div>
+
+        <div id="events-upcoming" class="events-item" style="display:none;">
+          <h3>Upcoming Events</h3>
+          <ul>
+            <li><strong>Prayer Night</strong>  Every Friday @ 7:00 PM</li>
+            <li><strong>Community Food Drive</strong>  Oct 5, 2026  Volunteer to pack & distribute food</li>
+            <li><strong>Women's Fellowship Retreat</strong>  Oct 2022, 2026</li>
+          </ul>
+        </div>
+
+        <div id="events-calendar" class="events-item" style="display:none;">
+          <h3>Events Calendar (Monthly)</h3>
+          <p>Use the full calendar to see all activities.</p>
+          <div id="calendarWidget" class="calendar-widget"></div>
+        </div>
+
+        <div id="events-gallery" class="events-item" style="display:none;">
+          <h3>Past Events Gallery</h3>
+          <div class="gallery">
+            <video controls>
+              <source src="images/CCA choir.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <p style="margin-top: 10px; font-size: 0.9em; color: #666;"><strong>CCA Eldoret Choir Music 2024 - Rapar at Dala Hera</strong><br/>A memorable worship session featuring our church choir performing traditional hymns and contemporary worship songs.</p>
+          </div>
+          <p><a href="#contact">Volunteer for events</a></p>
+        </div>
+      </div>
+    </section>
+
+    <hr />
+
+    <!-- GIVING -->
+        <section id="giving" aria-labelledby="giving-heading">
+      <h2 id="giving-heading">Giving  Your Generosity Changes Lives</h2>
+
+      <p>Giving is an act of worship. Your tithes, offerings and gifts support ministry, outreach and mission work.</p>
+
+      <blockquote>
+        <p>"Each of you should give what you have decided in your heart to give, not reluctantly... for God loves a cheerful giver."  2 Corinthians 9:7</p>
+      </blockquote>
+
+      <div class="dropdown">
+        <button class="dropdown-btn" onclick="toggleDropdown('givingDropdown')">Select Giving Topic ▼</button>
+        <div id="givingDropdown" class="dropdown-content">
+          <a href="#giving-ways" onclick="showTopic('giving-item','ways','givingDropdown')">Ways to Give</a>
+          <a href="#giving-designations" onclick="showTopic('giving-item','designations','givingDropdown')">Designations</a>
+          <a href="#giving-stories" onclick="showTopic('giving-item','stories','givingDropdown')">Impact Stories</a>
+          <a href="#giving-recurring" onclick="showTopic('giving-item','recurring','givingDropdown')">Recurring Giving</a>
+        </div>
+      </div>
+
+      <div id="giving-content" style="margin-top: 20px;">
+        <div id="ways" class="giving-item" style="display:none;">
+          <h3>Ways to Give</h3>
+          <ul>
+            <li><strong>Online Card Payment:</strong> Visa/Mastercard (payment provider placeholder)</li>
+            <li><strong>PayPal / Stripe / Flutterwave / Pesapal:</strong> (links placeholder)</li>
+            <li><strong>M-Pesa Paybill:</strong> <em>XXXXXX</em> (replace with actual Paybill)</li>
+            <li><strong>Bank Transfer:</strong> CCA Church Eldoret Area  ABC Bank  Account No. 1234567890</li>
+            <li><strong>In-Person:</strong> Sunday offering or church office drop-off</li>
+          </ul>
+        </div>
+
+        <div id="designations" class="giving-item" style="display:none;">
+          <h3>Designations</h3>
+          <ul>
+            <li>Tithes & Offerings</li>
+            <li>Missions & Outreach</li>
+            <li>Building Project</li>
+            <li>Children & Youth Ministries</li>
+          </ul>
+        </div>
+
+        <div id="stories" class="giving-item" style="display:none;">
+          <h3>Impact Stories</h3>
+          <p>"Your generosity helped feed 200 families last drive"  Food Drive testimony. <a href="#contact">See more stories</a></p>
+        </div>
+
+        <div id="recurring" class="giving-item" style="display:none;">
+          <h3>Recurring Giving</h3>
+          <p>Set up weekly or monthly support (payment provider placeholder).</p>
+          <p><a href="#contact">Contact the office for giving assistance</a></p>
+        </div>
+      </div>
+    </section>
+
+    <hr />
+
+    <!-- CONTACT -->
+    <section id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact Us</h2>
+      <p>Have a question, need prayer, or want to get involved? Reach
+out — we’d love to connect.</p>
+
+      <h3>Church Office</h3>
+      <address>
+        CCA Church Eldoret Area<br/>
+        Kipkaren Street, Eldoret, Kenya<br/>
+        Phone: +254 7+++++++++<br/>
+        Email: <a
+href="mailto:info@gracefellowship.org">info@ccaeldoretarea.org</a>
+      </address>
+
+      <h3>Office Hours</h3>
+      <ul>
+        <li>Tuesday–Friday: 9:00 AM – 5:00 PM</li>
+        <li>Saturday: 10:00 AM – 2:00 PM</li>
+        <li>Sunday: During &amp; after services</li>
+      </ul>
+
+      <h3>Contact Form</h3>
+      <form action="#" method="post"
+enctype="application/x-www-form-urlencoded" aria-label="Contact form">
+        <p><label>Full Name:<br/>
+          <input type="text" name="name" required /></label></p>
+        <p><label>Email Address:<br/>
+          <input type="email" name="email" required /></label></p>
+        <p><label>Phone Number:<br/>
+          <input type="tel" name="phone" /></label></p>
+        <p><label>Subject:<br/>
+          <select name="subject">
+            <option>General Inquiry</option>
+            <option>Prayer Request</option>
+            <option>Event Registration</option>
+            <option>Volunteering</option>
+            <option>Giving</option>
+          </select></label></p>
+        <p><label>Message:<br/>
+          <textarea name="message" rows="6" cols="40"
+required></textarea></label></p>
+        <p><input type="submit" value="Send Message" /></p>
+      </form>
+
+      <h3>Map & Directions</h3>
+      <p>Google Maps embed placeholder — paste your map iframe here
+when ready.</p>
+
+      <h3>Prayer Requests</h3>
+      <p>If you would like us to pray with you, please submit above
+with subject "Prayer Request" — our prayer team prays faithfully for
+every need.</p>
+    </section>
+
+    <hr />
+
+    <!-- PLAN YOUR VISIT (anchor target) -->
+    <section id="plan-visit" aria-labelledby="plan-heading">
+      <h2 id="plan-heading">Plan Your Visit</h2>
+      <p>We'd love to welcome you. Here's what to expect:</p>
+      <ul>
+        <li>Casual dress is welcome — come as you are.</li>
+        <li>Friendly greeters at the door; childcare available during
+services.</li>
+        <li>Service style: blended worship with practical Bible teaching.</li>
+        <li>Parking and accessible seating available.</li>
+      </ul>
+      <p><a href="#contact">Contact us</a> if you need directions or
+have special needs.</p>
+    </section>
+
+  </main>
+
+  <hr />
+
+  <!-- Footer -->
+  <footer>
+    <h3>CCA Church Eldoret Area</h3>
+    <p><em>Faith | Family | Purpose</em></p>
+
+    <p>Address: Kipkaren, Eldoret • Phone: +254 70++++ • Email: <a
+href="mailto:info@gracefellowship.org">info@ccaeldoretarea.org</a></p>
+
+    <p>Social: <a href="https://www.facebook.com/profile.php?id=61572161170650" target="_blank" rel="noopener" aria-label="Facebook link">Facebook</a> •
+<a href="https://www.youtube.com/channel/UCM-I-BnJ7eQJApYgM914VKA" target="_blank" rel="noopener" aria-label="YouTube link">YouTube</a> • <a href="https://www.instagram.com/ccaeldoretarea/" target="_blank" rel="noopener" aria-label="Instagram link">Instagram</a></p>
+
+    <p>© <span id="year">2026</span> CCA Area Eldoret Area. All rights
+reserved.</p>
+
+    <p><a href="#top">Back to top</a></p>
+  </footer>
+
+  <script>
+    // Welcome Modal Functions
+    function getGreeting() {
+      const hour = new Date().getHours();
+      if (hour >= 5 && hour < 12) return 'Good morning!';
+      if (hour >= 12 && hour < 16) return 'Good afternoon!';
+      if (hour >= 16 && hour < 22) return 'Good evening!';
+      return 'Good night!';
+    }
+
+    function showWelcomeModal() {
+      const modal = document.getElementById('welcomeModal');
+      const greeting = document.getElementById('welcomeGreeting');
+      greeting.textContent = getGreeting();
+      modal.style.display = 'flex';
+      setTimeout(closeWelcomeModal, 7000);
+    }
+
+    function closeWelcomeModal() {
+      const modal = document.getElementById('welcomeModal');
+      if (modal) modal.style.display = 'none';
+    }
+
+    function toggleNavDropdown(event) {
+      event.preventDefault();
+      const submenu = event.target.nextElementSibling;
+      const isOpen = submenu.classList.contains('show');
+      document.querySelectorAll('nav .submenu.show').forEach(m => m.classList.remove('show'));
+      if (!isOpen) submenu.classList.add('show');
+    }
+
+    function toggleDropdown(dropdownId) {
+      closeAllDropdowns();
+      const dropdown = document.getElementById(dropdownId);
+      if (dropdown) dropdown.classList.toggle('show');
+    }
+
+    function showTopic(itemClass, sectionId, dropdownId) {
+      document.querySelectorAll(`.${itemClass}`).forEach(item => item.style.display = 'none');
+      const section = document.getElementById(sectionId);
+      if (section) section.style.display = 'block';
+      const dropdown = document.getElementById(dropdownId);
+      if (dropdown) dropdown.classList.remove('show');
+      if (sectionId === 'events-calendar') {
+        renderEventsCalendar();
+      }
+    }
+
+    function closeAllDropdowns() {
+      document.querySelectorAll('.dropdown-content.show').forEach(dropdown => dropdown.classList.remove('show'));
+    }
+
+    function renderEventsCalendar() {
+      const widget = document.getElementById('calendarWidget');
+      if (!widget || widget.dataset.rendered === 'true') return;
+
+      const monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+      const weekDays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+      const events = {
+        '2026-09-12': ['Youth Camp Planning Meeting'],
+        '2026-09-17': ['Prayer Night @ 7:00 PM'],
+        '2026-09-25': ['Youth Camp "Ignite Your Faith"'],
+        '2026-10-05': ['Community Food Drive'],
+        '2026-10-10': ['Women\'s Fellowship Retreat'],
+      };
+
+      let currentDate = new Date();
+      let currentYear = currentDate.getFullYear();
+      let currentMonth = currentDate.getMonth();
+
+      function createCalendar(year, month) {
+        const firstDay = new Date(year, month, 1);
+        const lastDay = new Date(year, month + 1, 0);
+        const startDay = firstDay.getDay();
+        const totalDays = lastDay.getDate();
+
+        const table = document.createElement('table');
+        table.className = 'calendar-grid';
+
+        const thead = document.createElement('thead');
+        const headerRow = document.createElement('tr');
+        weekDays.forEach(day => {
+          const th = document.createElement('th');
+          th.textContent = day;
+          headerRow.appendChild(th);
+        });
+        thead.appendChild(headerRow);
+        table.appendChild(thead);
+
+        const tbody = document.createElement('tbody');
+        let row = document.createElement('tr');
+        let dayCount = 1;
+
+        for (let cell = 0; cell < startDay; cell += 1) {
+          row.appendChild(document.createElement('td'));
+        }
+
+        while (dayCount <= totalDays) {
+          if (row.children.length === 7) {
+            tbody.appendChild(row);
+            row = document.createElement('tr');
+          }
+
+          const cell = document.createElement('td');
+          cell.className = 'calendar-day';
+          const number = document.createElement('span');
+          number.textContent = dayCount;
+          cell.appendChild(number);
+
+          const dateKey = `${year}-${String(month + 1).padStart(2, '0')}-${String(dayCount).padStart(2, '0')}`;
+          if (events[dateKey]) {
+            events[dateKey].forEach(eventTitle => {
+              const eventNode = document.createElement('span');
+              eventNode.className = 'calendar-event';
+              eventNode.textContent = eventTitle;
+              cell.appendChild(eventNode);
+            });
+          }
+
+          row.appendChild(cell);
+          dayCount += 1;
+        }
+
+        while (row.children.length < 7) {
+          row.appendChild(document.createElement('td'));
+        }
+        tbody.appendChild(row);
+        table.appendChild(tbody);
+        return table;
+      }
+
+      function render() {
+        widget.innerHTML = '';
+
+        const header = document.createElement('div');
+        header.className = 'calendar-header';
+
+        const title = document.createElement('h4');
+        title.textContent = `${monthNames[currentMonth]} ${currentYear}`;
+        header.appendChild(title);
+
+        const controls = document.createElement('div');
+        controls.className = 'calendar-controls';
+
+        const prevBtn = document.createElement('button');
+        prevBtn.textContent = 'Previous';
+        prevBtn.onclick = () => {
+          currentMonth -= 1;
+          if (currentMonth < 0) {
+            currentMonth = 11;
+            currentYear -= 1;
+          }
+          render();
+        };
+
+        const nextBtn = document.createElement('button');
+        nextBtn.textContent = 'Next';
+        nextBtn.onclick = () => {
+          currentMonth += 1;
+          if (currentMonth > 11) {
+            currentMonth = 0;
+            currentYear += 1;
+          }
+          render();
+        };
+
+        controls.appendChild(prevBtn);
+        controls.appendChild(nextBtn);
+        header.appendChild(controls);
+        widget.appendChild(header);
+
+        widget.appendChild(createCalendar(currentYear, currentMonth));
+
+        const legend = document.createElement('div');
+        legend.className = 'calendar-legend';
+        legend.textContent = 'Events shown on the calendar are examples. Update the event dates and details as needed.';
+        widget.appendChild(legend);
+      }
+
+      render();
+      widget.dataset.rendered = 'true';
+    }
+
+    document.addEventListener('click', event => {
+      if (!event.target.closest('.dropdown') && !event.target.closest('.nav-item-has-submenu')) {
+        closeAllDropdowns();
+        document.querySelectorAll('nav .submenu.show').forEach(m => m.classList.remove('show'));
+      }
+    });
+
+    window.addEventListener('load', () => {
+      showWelcomeModal();
+      const hash = window.location.hash.substring(1);
+      if (hash === 'events-calendar') {
+        showTopic('events-item', 'events-calendar', 'eventsDropdown');
+      }
+    });
+  </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

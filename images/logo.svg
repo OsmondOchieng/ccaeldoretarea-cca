@@ -1,0 +1,17 @@
+<svg width="120" height="160" viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .main { fill: none; stroke: #e60023; stroke-width: 16; stroke-linecap: round; stroke-linejoin: round; }
+  </style>
+
+  <!-- H -->
+  <line class="main" x1="70" y1="220" x2="70" y2="360"></line>
+  <line class="main" x1="230" y1="220" x2="230" y2="360"></line>
+  <line class="main" x1="70" y1="290" x2="230" y2="290"></line>
+
+  <!-- Stem -->
+  <line class="main" x1="150" y1="80" x2="150" y2="290"></line>
+
+  <!-- Cross -->
+  <line class="main" x1="150" y1="40" x2="150" y2="120"></line>
+  <line class="main" x1="110" y1="80" x2="190" y2="80"></line>
+</svg>
